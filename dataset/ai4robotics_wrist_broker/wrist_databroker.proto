@@ -1,0 +1,18 @@
+// Define the used version of proto
+syntax = "proto3";
+
+message Empty {
+  
+}
+
+// Define a message to hold the features input by the client
+message Measurement {
+  string index = 1;
+  string scenario = 2;
+  string movement = 3;
+  int32 iteration = 4;
+  repeated float sensor_data = 5;
+}
+
+// Define the service
+service WristSensorDatabroker { rpc wrist_sensor_databroker(Empty) returns (Measurement); }

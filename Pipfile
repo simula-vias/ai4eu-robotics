@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+click = "*"
+pandas = "*"
+scipy = "*"
+numpy = "*"
+grpcio = "*"
+grpc-interceptor = "*"
+multithreading = "*"
+protobuf = "*"
+grpcio-tools = "*"
+googleapis-common-protos = "*"
+scikit-learn = "*"
+auto-sklearn = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
