@@ -92,7 +92,7 @@ def convert_single_file(input_file, output_directory, samples, format):
             sensor_values = {}
 
             for sensor in ("s1", "s2"):
-                if not is_wrist:
+                if sensor == "s2" and not is_wrist:
                     continue
 
                 if len(chunk) != samples:
